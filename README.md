@@ -13,6 +13,7 @@ Please get/install following components (and accounts) before workshop.
 * PowerShell
 * [CMDer](http://cmder.net/) might be useful
 * [Azure SDK](https://azure.microsoft.com/pl-pl/downloads/)
+* [Azure CLI](https://aka.ms/installazurecliwindows)
 * [AWS SDK](https://aws.amazon.com/tools/)
 * [AWS CLI](https://aws.amazon.com/cli/)
 * [Google Cloud SDK](https://cloud.google.com/sdk/)
@@ -27,12 +28,12 @@ Please get/install following components (and accounts) before workshop.
 
 ### AWS CLI setup on Windows
 
-- Login to AWS console
-- Go to _My Security Credentials_
-- Create credentials (AWS Access Key)
-- Run AWS CLI
-- Run command _aws configure_
-- Provide _AWS Access Key ID_ and _AWS Secret Access Key_
+1. Login to AWS console
+2. Go to _My Security Credentials_
+3. Create credentials (AWS Access Key)
+4. Run AWS CLI
+5. Run command _aws configure_
+6. Provide _AWS Access Key ID_ and _AWS Secret Access Key_
 
 ## Workshop
 
@@ -88,6 +89,8 @@ In this excercise we will create a storage and upload a simple React application
 #### AWS S3
 
 ##### Create bucket using CLI
+
+Below command creates a bucket with public read in US-EAST-1 region (default AWS region).
 
 > aws s3api create-bucket --bucket your-custom-and-unique-name-across-aws2 --acl public-read --region us-east-1
 
