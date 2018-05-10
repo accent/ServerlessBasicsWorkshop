@@ -8,18 +8,20 @@ On all platforms they are free accounts available.
 
 Please get/install following components (and accounts) before workshop.
 
+* **Accounts in Azure, AWS and Google Cloud Platform**
+* samples will be in C# and JavaScript
 * IDE (Notepad++ as minimum)
 * .NET Core 2 SDK
 * PowerShell
+* CLIs
+  * [Azure CLI](https://aka.ms/installazurecliwindows)
+  * [AWS CLI](https://aws.amazon.com/cli/)
 * [CMDer](http://cmder.net/) might be useful
-* [Azure SDK](https://azure.microsoft.com/pl-pl/downloads/)
-* [Azure CLI](https://aka.ms/installazurecliwindows)
-* [AWS SDK](https://aws.amazon.com/tools/)
-* [AWS CLI](https://aws.amazon.com/cli/)
-* [Google Cloud SDK](https://cloud.google.com/sdk/)
 * Docker
-* **Accounts in Azure, AWS and Google Cloud Platform**
-* samples will be in C# and JavaScript
+* SDKs
+  * [Azure SDK](https://azure.microsoft.com/pl-pl/downloads/)
+  * [AWS SDK](https://aws.amazon.com/tools/)
+  * [Google Cloud SDK](https://cloud.google.com/sdk/)
 * **Good mood**
 * **Laptop, calculator or any other device when you can run the code will be useful**
 
