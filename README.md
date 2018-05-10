@@ -29,6 +29,7 @@ Please get/install following components (and accounts) before workshop.
 
 The workshop is divided into 3 parts (from the hardest to the easiest) - containers (Docker), functions and storage solutions.
 
+Our main journey will be done using CLIs.
 
 ### Containers
 
@@ -65,10 +66,16 @@ In this excercise we will create a storage and upload a simple Angular or React 
 
 ##### Create an account using CLI
 
+##### Deploy the app using CLI
+
 #### AWS S3
 
 ##### Create an account using CLI
 
+##### Deploy the app using CLI
+
 #### Google Cloud Storage
 
 ##### Create an account using CLI
+
+##### Deploy the app using CLI
