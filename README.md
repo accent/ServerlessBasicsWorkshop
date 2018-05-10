@@ -14,6 +14,7 @@ Please get/install following components (and accounts) before workshop.
 * [CMDer](http://cmder.net/) might be useful
 * [Azure SDK](https://azure.microsoft.com/pl-pl/downloads/)
 * [AWS SDK](https://aws.amazon.com/tools/)
+* [AWS CLI](https://aws.amazon.com/cli/)
 * [Google Cloud SDK](https://cloud.google.com/sdk/)
 * Docker
 * **Accounts in Azure, AWS and Google Cloud Platform**
@@ -24,6 +25,14 @@ Please get/install following components (and accounts) before workshop.
 ## Additional Instructions
 ### GCP setup on Windows
 
+### AWS CLI setup on Windows
+
+- Login to AWS console
+- Go to _My Security Credentials_
+- Create credentials (AWS Access Key)
+- Run AWS CLI
+- Run command _aws configure_
+- Provide _AWS Access Key ID_ and _AWS Secret Access Key_
 
 ## Workshop
 
@@ -45,7 +54,7 @@ Azure supports two way to handle containers (which scales automatically).
 
 ##### Container Instances
 
->
+> 
 
 ##### WebApp for containers
 
@@ -72,18 +81,22 @@ In this excercise we will create a storage and upload a simple React application
 
 #### Azure Storage Account
 
-##### Create an account using CLI
+##### Create storage using CLI
 
 ##### Deploy the app using CLI
 
 #### AWS S3
 
-##### Create an account using CLI
+##### Create bucket using CLI
+
+> aws s3api create-bucket --bucket your-custom-and-unique-name-across-aws2 --acl public-read --region us-east-1
 
 ##### Deploy the app using CLI
 
+##### Enable static hosting
+
 #### Google Cloud Storage
 
-##### Create an account using CLI
+##### Create storage using CLI
 
 ##### Deploy the app using CLI
