@@ -110,9 +110,19 @@ Below command creates a bucket with public read in US-EAST-1 region (default AWS
 
 > aws s3api create-bucket --bucket your-custom-and-unique-name-across-aws2 --acl public-read --region us-east-1
 
+This name has to be unique across entire AWS.
+
 ##### Deploy the app using CLI
 
+>  aws s3 cp source_file_name s3://your-custom-and-unique-name-across-aws2
+
 ##### Enable static hosting
+
+It enables hosting on the server for static files with index.html as default document. It may not exists, it's just mandatory to provide a filename.
+
+> aws s3 website s3://your-custom-and-unique-name-across-aws2 --index-document index.html
+
+The website will be available as: http://your-custom-and-unique-name-across-aws2.s3-website-us-east-1.amazonaws.com/
 
 #### Google Cloud Storage
 
