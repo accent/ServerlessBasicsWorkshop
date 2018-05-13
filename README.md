@@ -115,8 +115,8 @@ Now we have to setup keys.
 
 When we have the keys, we need to set environment variables.
 
-> export AZURE_STORAGE_ACCOUNT=YOUR-STORAGE-ACCOUNT-NAME
-> export AZURE_STORAGE_ACCESS_KEY=KEY1
+> set AZURE_STORAGE_ACCOUNT=YOUR-STORAGE-ACCOUNT-NAME
+> set AZURE_STORAGE_ACCESS_KEY=KEY1
 
 As next step we have to create a _Blob container_. Unfortunately _file share_ does not support (easy) public sharing of data.
 

@@ -1,0 +1,6 @@
+az storage account create --resource-group "YOUR-RESOURCE-GROUP-NAME" --name "YOUR-UNIQUE-NAME"
+az storage account keys list --account-name YOUR-STORAGE-ACCOUNT-NAME --resource-group YOUR-RESOURCE-GROUP-NAME --output table
+set AZURE_STORAGE_ACCOUNT=YOUR-STORAGE-ACCOUNT-NAME
+set AZURE_STORAGE_ACCESS_KEY=KEY1
+az storage container create --name CONTAINER-NAME
+az storage blob upload -f FULL-SOURCE-FILE-PATH -c YOUR-CONTAINER-NAME -n BLOB-NAME
