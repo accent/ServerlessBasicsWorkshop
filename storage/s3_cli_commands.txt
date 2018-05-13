@@ -1,0 +1,3 @@
+aws s3api create-bucket --bucket your-custom-and-unique-name-across-aws2 --acl public-read --region us-east-1
+aws s3 cp source_file_name s3://your-custom-and-unique-name-across-aws2
+aws s3 website s3://your-custom-and-unique-name-across-aws2 --index-document index.html

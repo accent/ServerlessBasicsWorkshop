@@ -2,3 +2,5 @@
 /containers/app/bin
 obj
 bin
+/containers/app/backend/obj
+/containers/app/backend/bin

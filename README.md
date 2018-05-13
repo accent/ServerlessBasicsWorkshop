@@ -31,12 +31,17 @@ On all platforms they are free accounts available.
 
 ## Additional Instructions
 
-### Azure setup on Windows
+### Azure additional setup on Windows
 
+Run _az login_ to login in interactive mode.
+
+Create a resource group. We will be using it in all exercises. Name has to be unique.
+
+> az group create --name "YOUR-RESOURCE-GROUP-NAME" --location "East US"
 
 **We will use East US region.**
 
-### AWS setup on Windows
+### AWS additional setup on Windows
 
 1. Login to AWS console
 2. Go to _My Security Credentials_
@@ -47,7 +52,7 @@ On all platforms they are free accounts available.
 
 **We will use US-EAST-1 region.**
 
-### GCP setup on Windows
+### Google Cloud additional setup on Windows
 
 ## Workshop
 
@@ -100,7 +105,34 @@ In this excercise we will create a storage and upload a simple React application
 
 ##### Create storage using CLI
 
+Create a storage account must be unique across all regions and accounts in Azure. Only lowercase letters and numbers are allowed. Required name length is 3-24 chars.
+
+> az storage account create --resource-group "YOUR-RESOURCE-GROUP-NAME" --name "YOUR-UNIQUE-NAME"
+
+Now we have to setup keys.
+
+> az storage account keys list --account-name YOUR-STORAGE-ACCOUNT-NAME --resource-group YOUR-RESOURCE-GROUP-NAME --output table
+
+When we have the keys, we need to set environment variables.
+
+> export AZURE_STORAGE_ACCOUNT=YOUR-STORAGE-ACCOUNT-NAME
+> export AZURE_STORAGE_ACCESS_KEY=KEY1
+
+As next step we have to create a _Blob container_. Unfortunately _file share_ does not support (easy) public sharing of data.
+
+> az storage container create --name CONTAINER-NAME
+
+Azure cannot redirect to index.html. That's the biggest disappointment which I noticed.
+
 ##### Deploy the app using CLI
+
+To copy the files we need to run following command:
+
+> az storage blob upload -f FULL-SOURCE-FILE-PATH -c YOUR-CONTAINER-NAME -n BLOB-NAME
+
+Set public read for blob:
+
+> 
 
 #### AWS S3
 
@@ -129,3 +161,5 @@ The website will be available as: http://your-custom-and-unique-name-across-aws2
 ##### Create storage using CLI
 
 ##### Deploy the app using CLI
+
+##### Enable static hosting

@@ -11,7 +11,8 @@ namespace backend.Controllers
         [HttpGet]
         public string Get()
         {
-            string hostName = Dns.GetHostName(); // Retrive the Name of HOST  
+            // Retrive the Name of HOST
+            string hostName = Dns.GetHostName();
             Console.WriteLine(hostName);
             // Get the IP  
             return Dns.GetHostEntry(hostName).AddressList[0].ToString();
