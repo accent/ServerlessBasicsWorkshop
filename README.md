@@ -4,31 +4,39 @@ During the workshop you will get familiar with different approaches to serverles
 
 On all platforms they are free accounts available.
 
-## Required components
+## Toolset
 
-Please get/install following components (and accounts) before workshop.
-
+### Must have
 * **Accounts in Azure, AWS and Google Cloud Platform**
-* samples will be in C# and JavaScript
+* samples will be in C# and JavaScript - so basic knowledge would be a plus
 * IDE (Notepad++ as minimum)
-* .NET Core 2 SDK
 * PowerShell
 * CLIs
   * [Azure CLI](https://aka.ms/installazurecliwindows)
   * [AWS CLI](https://aws.amazon.com/cli/)
+ 
+### Absolute must have - does not come without them!  
+* **Good mood**
+* **Laptop, calculator or any other device when you can run the code will be useful**  
+
+### Optional/not required but useful
 * [CMDer](http://cmder.net/) might be useful
-* Docker
+* Docker (it requires HyperV enabled, won't work with VirtualBox)
 * SDKs
+  * .NET Core 2 SDK
   * [Azure SDK](https://azure.microsoft.com/pl-pl/downloads/)
   * [AWS SDK](https://aws.amazon.com/tools/)
   * [Google Cloud SDK](https://cloud.google.com/sdk/)
-* **Good mood**
-* **Laptop, calculator or any other device when you can run the code will be useful**
+
 
 ## Additional Instructions
-### GCP setup on Windows
 
-### AWS CLI setup on Windows
+### Azure setup on Windows
+
+
+**We will use East US region.**
+
+### AWS setup on Windows
 
 1. Login to AWS console
 2. Go to _My Security Credentials_
@@ -36,6 +44,10 @@ Please get/install following components (and accounts) before workshop.
 4. Run AWS CLI
 5. Run command _aws configure_
 6. Provide _AWS Access Key ID_ and _AWS Secret Access Key_
+
+**We will use US-EAST-1 region.**
+
+### GCP setup on Windows
 
 ## Workshop
 
@@ -55,7 +67,7 @@ In this excercise we will create and deploy a Docker container with web service.
 
 Azure supports two way to handle containers (which scales automatically).
 
-##### Container Instances
+##### Container Instances (AKS)
 
 > 
 
@@ -68,6 +80,8 @@ It is rather in preview phase than ready to use (ECS - ready to use, EKS - in pr
 #### Google Compute Engine
 
 Unfortunately Google as the only one provider requires to organize the underlying resources (VMs) by yourself instead of deliver automated mechanism which would ensure scaling.
+
+However there is native support of Kubernetes (Kubernetes Engine).
 
 ### Functions
 

@@ -5,7 +5,7 @@
     <DockerTargetOS>Linux</DockerTargetOS>
     <ProjectGuid>614d6a10-34ca-4ca8-a385-79ee02f7f8bf</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
-    <DockerServiceUrl>http://localhost:{ServicePort}/api/values</DockerServiceUrl>
+    <DockerServiceUrl>http://localhost:{ServicePort}/api/ip</DockerServiceUrl>
     <DockerServiceName>backend</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
