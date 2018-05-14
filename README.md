@@ -54,6 +54,10 @@ Create a resource group. We will be using it in all exercises. Name has to be un
 
 ### Google Cloud additional setup on Windows
 
+When you create an account, you need to add a card to your account. It does not accept prepaids like Revolut.
+
+**We will use US Central region**
+
 ## Workshop
 
 The workshop is divided into 3 parts (from the hardest to the easiest) - containers (Docker), functions and storage solutions.
@@ -138,6 +142,7 @@ Set public read for blob:
 
 ##### Create bucket using CLI
 
+
 Below command creates a bucket with public read in US-EAST-1 region (default AWS region).
 
 > aws s3api create-bucket --bucket your-custom-and-unique-name-across-aws2 --acl public-read --region us-east-1
@@ -158,8 +163,14 @@ The website will be available as: http://your-custom-and-unique-name-across-aws2
 
 #### Google Cloud Storage
 
+Considering Google's documentation, AWS is main competitor.
+
 ##### Create storage using CLI
 
 ##### Deploy the app using CLI
 
 ##### Enable static hosting
+
+The website will be available as: http://BUCKET-NAME.storage.googleapis.com/index.html. Unfortunately Google shares same approach as Azure - _index.html_ is not default file and you cannot set up default one however when public access is set it will allow to list bucket content.
+
+Also its audit options are poor.
