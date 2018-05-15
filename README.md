@@ -68,6 +68,14 @@ At the end, we should have working application.
 
 As main data center, choose one in USA - they are the cheapest and connectivity (latency) works fine for us (Poland) - at least for the needs of this workshop.
 
+### Container registries
+
+#### Azure
+
+#### AWS
+
+#### Google
+
 ### Containers
 
 In this excercise we will create and deploy a Docker container with web service. We will check how containers scale automatically under the load.
@@ -94,12 +102,15 @@ However there is native support of Kubernetes (Kubernetes Engine).
 
 ### Functions
 
+We will create a simple function which will response on HTTP request.
+
 #### Azure Functions
 
 #### AWS Lambda
 
 #### Google Cloud Functions
 
+Currently in **beta**. It supports only JavaScript at this moment.
 
 ### Storage
 
