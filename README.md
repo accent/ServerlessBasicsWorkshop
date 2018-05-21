@@ -72,6 +72,17 @@ As main data center, choose one in USA - they are the cheapest and connectivity 
 
 #### Azure
 
+Create docker registry container.
+
+> 
+
+Login through console.
+
+> az acr login --name your-docker-registry-name
+
+Create service credentials in Azure Active Directory
+
+
 #### AWS
 
 #### Google
@@ -85,6 +96,8 @@ In this excercise we will create and deploy a Docker container with web service.
 Azure supports two way to handle containers (which scales automatically).
 
 ##### Container Instances (AKS)
+
+It is in preview phase.
 
 > 
 
